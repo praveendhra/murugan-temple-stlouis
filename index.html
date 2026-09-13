@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Simpler Temple Experience — Mobile App Proposal</title>
+<meta name="description" content="A conceptual mobile app proposal for the Murugan Temple of St. Louis. Discussion document — nothing has been approved or built.">
+<style>
+:root{--cream:#FBF6EC;--maroon:#7B1E23;--ink:#2B2724;--muted:#6E655C;--line:#E6DCCB;--gold:#C9A227;--saffron:#E8821E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#EFE7D9;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Calibri,sans-serif}
+header{background:#6C1A20;color:#FFF6E8;padding:44px 22px 38px;text-align:center}
+header h1{margin:0 0 10px;font-family:Georgia,Cambria,serif;font-size:clamp(24px,4.4vw,36px);font-weight:700;line-height:1.2}
+header .sub{margin:0 auto 22px;color:#E3C7A8;font-size:15px;max-width:720px;line-height:1.55}
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:11px;text-decoration:none;font-size:14px;font-weight:600}
+.btn.p{background:var(--saffron);color:#3A1E05}
+.btn.s{background:#84262C;color:#FFF6E8;border:1px solid #9B3A3F}
+.banner{background:#FDF3E2;border-bottom:1px solid #F0DDBB;color:#8A6A10;
+ font-size:13px;text-align:center;padding:12px 20px;line-height:1.5}
+nav{position:sticky;top:0;z-index:10;background:rgba(251,246,236,.96);backdrop-filter:blur(6px);
+ border-bottom:1px solid var(--line);padding:9px 14px;overflow-x:auto;white-space:nowrap;
+ -webkit-overflow-scrolling:touch}
+nav a{display:inline-block;color:var(--maroon);text-decoration:none;font-size:12px;font-weight:600;
+ padding:5px 10px;border-radius:8px}
+nav a:hover{background:#F3E7DC}
+.wrap{max-width:1120px;margin:0 auto;padding:26px 16px 70px}
+h2.sec{font-family:Georgia,Cambria,serif;color:var(--maroon);font-size:22px;margin:38px 0 16px}
+.slide{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin-bottom:22px;
+ overflow:hidden;box-shadow:0 4px 14px rgba(60,40,20,.08);scroll-margin-top:56px}
+.meta{display:flex;align-items:baseline;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.num{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#A8862A}
+.ttl{font-family:Georgia,Cambria,serif;font-size:16px;font-weight:700;color:var(--maroon)}
+.slide>img{display:block;width:100%;height:auto}
+details{border-top:1px solid var(--line);background:#fff}
+summary{cursor:pointer;padding:12px 18px;font-size:13px;font-weight:700;color:var(--maroon)}
+.notes{padding:2px 18px 18px;font-size:14px;line-height:1.65;max-width:840px}
+.notes p{margin:0 0 10px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px}
+.gallery figure{margin:0;text-align:center}
+.gallery img{width:100%;height:auto;border-radius:10px}
+.gallery figcaption{margin-top:8px;font-size:12.5px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:0 20px 46px;line-height:1.7}
+</style></head><body>
+<header>
+  <h1>A Simpler Temple Experience</h1>
+  <p class="sub">A proposed mobile app for the Murugan Temple of St. Louis — bringing the schedule,
+  services, sponsorships, giving and timely updates into one place.</p>
+  <div class="btns">
+    <a class="btn p" href="downloads/Murugan-Temple-App-Proposal.pdf">Download PDF</a>
+    <a class="btn s" href="downloads/Murugan-Temple-App-Proposal.pptx">Download PowerPoint</a>
+    <a class="btn s" href="leadership-decisions.html">Decision one-pager</a>
+    <a class="btn s" href="executive-summary.html">Executive summary</a>
+  </div>
+</header>
+<div class="banner"><strong>Discussion document.</strong> Every app screen shown is a conceptual
+design. No app exists, nothing has been approved or purchased, and the temple has not endorsed this
+proposal. Sample data is labelled throughout.</div>
+<nav><a href="#s1">Slide 1</a><a href="#s2">Slide 2</a><a href="#s3">Slide 3</a><a href="#s4">Slide 4</a><a href="#s5">Slide 5</a><a href="#s6">Slide 6</a><a href="#s7">Slide 7</a><a href="#s8">Slide 8</a><a href="#s9">Slide 9</a><a href="#s10">Slide 10</a><a href="#s11">Slide 11</a><a href="#s12">Slide 12</a><a href="#s13">Appendix A</a><a href="#s14">Appendix B</a><a href="#screens">App screens</a><a href="speaker-notes.html">All speaker notes</a></nav>
+<div class="wrap">
+<section class="slide" id="s1">
+  <div class="meta"><span class="num">Slide 1</span><span class="ttl">A Simpler Temple Experience</span></div>
+  <img loading="lazy" src="slides/slide-01.png" alt="A Simpler Temple Experience">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Opening (about 60 seconds).</p><p>Say: &quot;Thank you for the time. What I&#x27;d like to show you today is a picture of what a temple app could feel like — and then ask for permission to go and check whether it is right.&quot;</p><p>Make the one-sentence case: the temple already has a good website. What it does not have is something that reaches a devotee&#x27;s pocket — that reminds them, shows them their own booking, and tells them what is happening right now.</p><p>Set expectations twice, clearly: every screen in this deck is a conceptual design, drawn to make the conversation concrete. No app exists. Nothing has been bought. Nobody has been hired.</p><p>Likely question: &quot;How much will this cost?&quot; — Answer: that is exactly what we are not able to say responsibly yet, and slide 12 explains what we are asking for instead.</p></div></details>
+</section><section class="slide" id="s2">
+  <div class="meta"><span class="num">Slide 2</span><span class="ttl">The Opportunity</span></div>
+  <img loading="lazy" src="slides/slide-02.png" alt="The Opportunity">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: mobile is a different reach, not a prettier website.</p><p>Say: &quot;Everything on the right-hand side of this slide already exists and works. I am not here to replace any of it. The question is what happens between visits to the website.&quot;</p><p>Walk the four points on the left quickly — personal, timely, fast, current. Land on the second one: the website cannot reach out. Only a notification can.</p><p>Likely question: &quot;Couldn&#x27;t we just send emails or WhatsApp messages?&quot; — Answer honestly: yes, for some of this, and we should test that in discovery. Where a phone is genuinely different is the pass in your pocket, the one-tap directions, and status that is correct at the moment you look.</p><p>Assumption to validate: that devotees actually want notifications from the temple, and which kinds.</p></div></details>
+</section><section class="slide" id="s3">
+  <div class="meta"><span class="num">Slide 3</span><span class="ttl">Today&#x27;s Friction</span></div>
+  <img loading="lazy" src="slides/slide-03.png" alt="Today&#x27;s Friction">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: name the friction honestly, and be equally honest about what we do not yet know.</p><p>Say: &quot;Three of these I can show you on the website right now. Three are guesses — sensible ones, but guesses — and I would rather label them that way than dress them up as findings.&quot;</p><p>Point at the green labels versus the amber labels explicitly. That distinction is the credibility of this whole deck.</p><p>Do not attack the website. If anyone hears criticism, correct it immediately: the site is well maintained and does a lot; this is about the gap between visits.</p><p>Likely question: &quot;Are people actually complaining?&quot; — Answer: we do not have that evidence, which is why we are asking to go and interview people rather than asking to build.</p><p>Assumption to validate: whether opening hours exist and are published somewhere we did not find.</p></div></details>
+</section><section class="slide" id="s4">
+  <div class="meta"><span class="num">Slide 4</span><span class="ttl">Meet the App</span></div>
+  <img loading="lazy" src="slides/slide-04.png" alt="Meet the App">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: the whole app is five tabs. That is the entire mental model.</p><p>Say: &quot;If a devotee remembers nothing else, they only need to remember that the temple&#x27;s app has five buttons at the bottom, and they never move.&quot;</p><p>Walk the five names slowly — Home, Events, Services, Donate, More. Point out that Services and Donate are deliberately separate, because sponsoring a pooja and giving to construction are different acts.</p><p>Invite them to look at the three screens rather than read them. The point is the feel: calm, uncluttered, large type.</p><p>Likely question: &quot;Why not more features?&quot; — Answer: because five is what a senior devotee can hold in their head, and because everything we add before we have talked to people is a guess.</p></div></details>
+</section><section class="slide" id="s5">
+  <div class="meta"><span class="num">Slide 5</span><span class="ttl">Know Before You Go</span></div>
+  <img loading="lazy" src="slides/slide-05.png" alt="Know Before You Go">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: the app answers the questions a family asks in the car, and it answers them honestly.</p><p>Say: &quot;The single most common question before any visit is some version of &#x27;what will it be like when we get there?&#x27; Today there is no good way to answer it.&quot;</p><p>Spend most of the time on the crowd meter, because it is the feature most likely to worry the board. Make three promises out loud: it is an estimate and labelled as one; it is entered by a person, not inferred from anyone&#x27;s phone; and there is never any tracking of where devotees are.</p><p>Explain the three-step rollout in plain words: to begin with, a volunteer presses one of four buttons.</p><p>Likely question: &quot;Who is going to keep it updated?&quot; — Good question, and it is on the pilot list: if staff cannot keep it current, we should not ship it.</p><p>Likely question: &quot;What if the estimate is wrong?&quot; — Then it says &#x27;updated 40 minutes ago&#x27; and people can judge for themselves. We would rather show staleness than pretend precision.</p></div></details>
+</section><section class="slide" id="s6">
+  <div class="meta"><span class="num">Slide 6</span><span class="ttl">Find, RSVP, Attend</span></div>
+  <img loading="lazy" src="slides/slide-06.png" alt="Find, RSVP, Attend">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: one clear journey a family can complete in under a minute, and three requests that must never be blurred together.</p><p>Walk the seven numbered steps briefly — do not read every word. Stop at step four and hold up the confirmation screen: &quot;this is the thing a family shows at the door.&quot;</p><p>Then make the separation point deliberately, because it matters to the priests in the room: attending is free and instant; sponsoring an abhishekam is a sponsorship with a receipt; a private priest service is a request that the office confirms. Three doors, never one basket.</p><p>Point out the note on the pass screen: a volunteer can still find a family by name. The QR only makes it faster.</p><p>Likely question: &quot;What if the same family RSVPs twice, or does not turn up?&quot; — That is exactly the sort of rule discovery has to settle with the people who run the door.</p></div></details>
+</section><section class="slide" id="s7">
+  <div class="meta"><span class="num">Slide 7</span><span class="ttl">Relevant Updates, Not Noise</span></div>
+  <img loading="lazy" src="slides/slide-07.png" alt="Relevant Updates, Not Noise">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: notifications are the strongest reason to have an app at all — and the fastest way to lose people&#x27;s trust if handled badly.</p><p>Read two of the example alerts aloud, ideally the closure one and the waitlist one. Those are the moments where a message genuinely helps a family.</p><p>Then move immediately to the controls, because that is what reassures a board. Three commitments: we ask only after somebody has done something that makes an alert relevant; devotees choose categories, so they can mute fundraising and keep their RSVP reminders; and nothing arrives late at night unless the temple is closed.</p><p>Make the deep-link point simply: if a message says View Pass, tapping it shows the pass. No hunting.</p><p>Likely question: &quot;Will we annoy people?&quot; — Only if we send things nobody asked for. The settings screen on the right is the answer, and opt-in rates are one of the pilot measures.</p></div></details>
+</section><section class="slide" id="s8">
+  <div class="meta"><span class="num">Slide 8</span><span class="ttl">Services, Sponsorships and Giving</span></div>
+  <img loading="lazy" src="slides/slide-08.png" alt="Services, Sponsorships and Giving">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: four intentions that must never share a checkout.</p><p>Say: &quot;Right now, saying you will attend, sponsoring an abhishekam and giving towards construction all pass through the same basket. In an app we can give each one its own door, and each one its own ending.&quot;</p><p>Emphasise the third lane for the priests: a private service is a request, not an instant booking. The app should never imply the temple has committed a priest before the office says so.</p><p>On money, be precise: the two amounts on the screen are the temple&#x27;s own published figures, and no payment provider has been chosen. That is a discovery decision, and it belongs to the treasurer.</p><p>Likely question: &quot;Will we pay card fees twice?&quot; — Unknown, and worth checking. Payment constraints are explicitly on the validation list.</p></div></details>
+</section><section class="slide" id="s9">
+  <div class="meta"><span class="num">Slide 9</span><span class="ttl">Community in One Place</span></div>
+  <img loading="lazy" src="slides/slide-09.png" alt="Community in One Place">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: the app is not only a booking tool. It is where the community&#x27;s life is visible.</p><p>Say: &quot;Everything on this slide already exists somewhere. What it does not have is one front door.&quot;</p><p>Give volunteering the most time. Today a person signs up on a form that has no idea which event they are helping with. Attaching a role to an event, and reminding the volunteer the day before, is one of the plainest wins in the whole proposal.</p><p>On the gallery, say clearly that we will not put any photograph or devotional media in the app without the temple confirming we may use it.</p><p>Likely question: &quot;Who keeps all this current?&quot; — The admin screen on the next slide is the answer, and volunteer effort is one of the things the pilot measures.</p></div></details>
+</section><section class="slide" id="s10">
+  <div class="meta"><span class="num">Slide 10</span><span class="ttl">Simple for Devotees and Staff</span></div>
+  <img loading="lazy" src="slides/slide-10.png" alt="Simple for Devotees and Staff">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: this only works if it is easy for a seventy-five-year-old devotee and easy for a volunteer on a Saturday.</p><p>Take the left column slowly. The most important line is the third one: every single thing the app does can also be done by telephoning the office or asking a volunteer. Nobody is shut out for not owning a smartphone.</p><p>Then turn to the admin screen. Note that it is a phone, not a computer — because the person updating crowd status is standing in the car park, not sitting at a desk.</p><p>Likely question from a trustee: &quot;Does this create more work for volunteers?&quot; — Be honest: at first, yes, a little. Whether it saves more than it costs is one of the things the pilot is designed to find out, and administrative time is on the measures list.</p><p>Assumption to validate: language needs, and who is authorised to send a notice on the temple&#x27;s behalf.</p></div></details>
+</section><section class="slide" id="s11">
+  <div class="meta"><span class="num">Slide 11</span><span class="ttl">Start Small and Prove Value</span></div>
+  <img loading="lazy" src="slides/slide-11.png" alt="Start Small and Prove Value">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Message: we are proposing the smallest thing that could honestly prove or disprove the idea.</p><p>Say: &quot;The middle column matters as much as the first. Knowing what we are not building is how a project like this stays affordable.&quot;</p><p>Explain the two pilot events in one line each: a recurring pooja tests whether the habit forms; a festival tests whether it survives a crowd.</p><p>Be very firm on money and dates. We are not giving a number today, because any number given before discovery would be invented. Cost drivers we already expect: how many integrations the temple needs, whether payments go through the existing store or a new route, how much content has to be migrated, and how much ongoing volunteer time is required.</p><p>On measures, say plainly: &quot;We are not promising a percentage. The pilot sets the baseline, and then the board decides whether the numbers are worth continuing for.&quot;</p></div></details>
+</section><section class="slide" id="s12">
+  <div class="meta"><span class="num">Slide 12</span><span class="ttl">Decision and Next Steps</span></div>
+  <img loading="lazy" src="slides/slide-12.png" alt="Decision and Next Steps">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Closing (about 90 seconds). Slow down here.</p><p>Say: &quot;I am not asking you to approve an app. I am asking for permission to find out whether we should build one.&quot;</p><p>Read the five items on the left out loud, one at a time. They are the whole request.</p><p>Then turn to the right-hand column and ask for those five decisions in the room, or a named person to settle them within a fortnight. Getting a decision owner is the single most valuable outcome of this meeting.</p><p>Finish on the dark bar at the bottom, deliberately: no production build, no budget, no vendor, no launch date. That is what keeps this a safe decision.</p><p>Likely objection: &quot;Why not just build a simple version and see?&quot; — Because we would be guessing at the temple&#x27;s own rules: capacity, who may cancel, what a private service request means, how payments must run. Discovery is cheaper than rebuilding.</p><p>Likely objection: &quot;We have fundraising priorities.&quot; — Agreed, and this proposal does not compete with them. Discovery is small, and it can be stopped after the prototype with nothing lost but time.</p></div></details>
+</section><section class="slide" id="s13">
+  <div class="meta"><span class="num">Appendix A</span><span class="ttl">Appendix A — Sources reviewed</span></div>
+  <img loading="lazy" src="slides/slide-13.png" alt="Appendix A — Sources reviewed">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Reference slide. Do not present unless asked where a claim came from. Every green CONFIRMED label in the deck traces to one of these pages.</p></div></details>
+</section><section class="slide" id="s14">
+  <div class="meta"><span class="num">Appendix B</span><span class="ttl">Appendix B — Assumptions requiring temple validation</span></div>
+  <img loading="lazy" src="slides/slide-14.png" alt="Appendix B — Assumptions requiring temple validation">
+  <details><summary>Speaker notes</summary><div class="notes"><p>Reference slide. Use it if a trustee asks &#x27;what don&#x27;t you know yet?&#x27; — the honest answer is this list, and it is the reason for asking for discovery rather than a build.</p></div></details>
+</section>
+<h2 class="sec" id="screens">Conceptual app screens</h2>
+<div class="gallery"><figure><a href="screens/01-home-dashboard.png"><img loading="lazy" src="screens/01-home-dashboard.png" alt="Home dashboard"></a><figcaption>Home dashboard</figcaption></figure><figure><a href="screens/02-crowd-meter.png"><img loading="lazy" src="screens/02-crowd-meter.png" alt="Crowd meter"></a><figcaption>Crowd meter</figcaption></figure><figure><a href="screens/03-event-details.png"><img loading="lazy" src="screens/03-event-details.png" alt="Event details"></a><figcaption>Event details</figcaption></figure><figure><a href="screens/04-family-rsvp.png"><img loading="lazy" src="screens/04-family-rsvp.png" alt="Family RSVP"></a><figcaption>Family RSVP</figcaption></figure><figure><a href="screens/05-notification-permission.png"><img loading="lazy" src="screens/05-notification-permission.png" alt="Notification permission"></a><figcaption>Notification permission</figcaption></figure><figure><a href="screens/06-notification-preferences.png"><img loading="lazy" src="screens/06-notification-preferences.png" alt="Notification preferences"></a><figcaption>Notification preferences</figcaption></figure><figure><a href="screens/07-rsvp-confirmation-qr.png"><img loading="lazy" src="screens/07-rsvp-confirmation-qr.png" alt="RSVP confirmation with QR"></a><figcaption>RSVP confirmation with QR</figcaption></figure><figure><a href="screens/08-donation-sponsorship.png"><img loading="lazy" src="screens/08-donation-sponsorship.png" alt="Donation and sponsorship"></a><figcaption>Donation and sponsorship</figcaption></figure><figure><a href="screens/09-admin-dashboard.png"><img loading="lazy" src="screens/09-admin-dashboard.png" alt="Simplified admin dashboard"></a><figcaption>Simplified admin dashboard</figcaption></figure><figure><a href="screens/10-community-hub.png"><img loading="lazy" src="screens/10-community-hub.png" alt="Community hub"></a><figcaption>Community hub</figcaption></figure><figure><a href="screens/11-notification-examples.png"><img loading="lazy" src="screens/11-notification-examples.png" alt="Notification examples"></a><figcaption>Notification examples</figcaption></figure></div>
+</div>
+<footer>Prepared for temple leadership · Sources reviewed September 2026 ·
+Original visuals only; no temple photograph, logo or devotional image is reproduced.</footer>
+</body></html>
